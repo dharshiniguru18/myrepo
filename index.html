@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>StayEase Hotel Reservation</title>
+
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+    }
+
+    .hotel-card {
+        background: white;
+        padding: 30px;
+        width: 340px;
+        border-radius: 12px;
+        box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .tagline {
+        text-align: center;
+        color: #666;
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+
+    label {
+        font-size: 14px;
+        margin-top: 10px;
+        display: block;
+    }
+
+    input, select {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+    }
+
+    input:focus, select:focus {
+        outline: none;
+        border-color: #2c5364;
+        box-shadow: 0 0 5px rgba(44,83,100,0.5);
+    }
+
+    button {
+        width: 100%;
+        margin-top: 20px;
+        padding: 10px;
+        background: #2c5364;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #203a43;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="hotel-card">
+    <h1>StayEase Hotel</h1>
+    <p class="tagline">Book your comfort stay</p>
+
+    <form>
+        <label>Guest Name</label>
+        <input type="text" placeholder="Enter your name">
+
+        <label>Check-in Date</label>
+        <input type="date">
+
+        <label>Check-out Date</label>
+        <input type="date">
+
+        <label>Room Type</label>
+        <select>
+            <option>Single Room</option>
+            <option>Double Room</option>
+            <option>Deluxe Room</option>
+        </select>
+
+        <label>Number of Guests</label>
+        <input type="number" min="1" max="5">
+
+        <button type="submit">Reserve Now</button>
+    </form>
+</div>
+
+</body>
+</html>
